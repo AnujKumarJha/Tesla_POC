@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D079777E2888463E00C7A2AC /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D079777D2888463E00C7A2AC /* ProductViewController.swift */; };
 		EF387EDF28871B52009FBD2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF387EDE28871B52009FBD2B /* AppDelegate.swift */; };
 		EF387EE128871B52009FBD2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF387EE028871B52009FBD2B /* SceneDelegate.swift */; };
 		EF387EE328871B52009FBD2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF387EE228871B52009FBD2B /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D079777D2888463E00C7A2AC /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		EF387EDB28871B52009FBD2B /* Tesla_POC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tesla_POC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF387EDE28871B52009FBD2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF387EE028871B52009FBD2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D079777C2888461B00C7A2AC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D079777D2888463E00C7A2AC /* ProductViewController.swift */,
+				EF387EE228871B52009FBD2B /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		EF387ED228871B52009FBD2B = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +67,9 @@
 		EF387EDD28871B52009FBD2B /* Tesla_POC */ = {
 			isa = PBXGroup;
 			children = (
+				D079777C2888461B00C7A2AC /* ViewControllers */,
 				EF387EDE28871B52009FBD2B /* AppDelegate.swift */,
 				EF387EE028871B52009FBD2B /* SceneDelegate.swift */,
-				EF387EE228871B52009FBD2B /* ViewController.swift */,
 				EF387EE428871B52009FBD2B /* Main.storyboard */,
 				EF387EE728871B52009FBD2B /* Assets.xcassets */,
 				EF387EE928871B52009FBD2B /* LaunchScreen.storyboard */,
@@ -140,6 +151,7 @@
 			files = (
 				EF387EE328871B52009FBD2B /* ViewController.swift in Sources */,
 				EF387EDF28871B52009FBD2B /* AppDelegate.swift in Sources */,
+				D079777E2888463E00C7A2AC /* ProductViewController.swift in Sources */,
 				EF387EE128871B52009FBD2B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
