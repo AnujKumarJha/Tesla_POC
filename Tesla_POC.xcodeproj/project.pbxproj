@@ -13,6 +13,9 @@
 		EF387EE628871B52009FBD2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF387EE428871B52009FBD2B /* Main.storyboard */; };
 		EF387EE828871B52009FBD2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF387EE728871B52009FBD2B /* Assets.xcassets */; };
 		EF387EEB28871B52009FBD2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF387EE928871B52009FBD2B /* LaunchScreen.storyboard */; };
+		EFB375012887BA700088F7F4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB375002887BA700088F7F4 /* LoginViewController.swift */; };
+		EFB375042887BA9A0088F7F4 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB375032887BA990088F7F4 /* RegisterViewController.swift */; };
+		EFCD0C242888EE690029DFBC /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCD0C232888EE690029DFBC /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		EF387EE728871B52009FBD2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF387EEA28871B52009FBD2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF387EEC28871B52009FBD2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFB375002887BA700088F7F4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EFB375032887BA990088F7F4 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		EFCD0C232888EE690029DFBC /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,13 @@
 		EF387EDD28871B52009FBD2B /* Tesla_POC */ = {
 			isa = PBXGroup;
 			children = (
+				EF394DF62887AF8900CF3D3C /* ViewModel */,
+				EF394DF52887AF6F00CF3D3C /* View */,
+				EF394DF42887AF6700CF3D3C /* Model */,
+				EF394DF22887AF5400CF3D3C /* Service */,
+				EF394DF12887AF4800CF3D3C /* Validation */,
+				EF394DF02887AF1200CF3D3C /* DataResources */,
+				EF394DEF2887AEFF00CF3D3C /* Common */,
 				EF387EDE28871B52009FBD2B /* AppDelegate.swift */,
 				EF387EE028871B52009FBD2B /* SceneDelegate.swift */,
 				EF387EE228871B52009FBD2B /* ViewController.swift */,
@@ -65,6 +78,58 @@
 				EF387EEC28871B52009FBD2B /* Info.plist */,
 			);
 			path = Tesla_POC;
+			sourceTree = "<group>";
+		};
+		EF394DEF2887AEFF00CF3D3C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EFCD0C232888EE690029DFBC /* Utilities.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		EF394DF02887AF1200CF3D3C /* DataResources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataResources;
+			sourceTree = "<group>";
+		};
+		EF394DF12887AF4800CF3D3C /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
+		EF394DF22887AF5400CF3D3C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		EF394DF42887AF6700CF3D3C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF394DF52887AF6F00CF3D3C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EFB375002887BA700088F7F4 /* LoginViewController.swift */,
+				EFB375032887BA990088F7F4 /* RegisterViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EF394DF62887AF8900CF3D3C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +203,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFCD0C242888EE690029DFBC /* Utilities.swift in Sources */,
+				EFB375012887BA700088F7F4 /* LoginViewController.swift in Sources */,
+				EFB375042887BA9A0088F7F4 /* RegisterViewController.swift in Sources */,
 				EF387EE328871B52009FBD2B /* ViewController.swift in Sources */,
 				EF387EDF28871B52009FBD2B /* AppDelegate.swift in Sources */,
 				EF387EE128871B52009FBD2B /* SceneDelegate.swift in Sources */,
@@ -290,6 +358,7 @@
 				DEVELOPMENT_TEAM = 4X32G3T62Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Tesla_POC/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tesla-POC";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -318,6 +387,7 @@
 				DEVELOPMENT_TEAM = 4X32G3T62Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Tesla_POC/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tesla-POC";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
