@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>999858411727-dsqtqo598di2bf8v0m76phr682vccaec.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.999858411727-dsqtqo598di2bf8v0m76phr682vccaec</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDU8NQA8ymtpkOD9OJNiYT4fBH7te9i1sY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>999858411727</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Tech.Tesla-POC</string>
+	<key>PROJECT_ID</key>
+	<string>teslapoc-e6376</string>
+	<key>STORAGE_BUCKET</key>
+	<string>teslapoc-e6376.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:999858411727:ios:40e8eb713b876752427fba</string>
+</dict>
+</plist>
