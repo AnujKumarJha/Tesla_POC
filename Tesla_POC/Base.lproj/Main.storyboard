@@ -364,10 +364,10 @@
             </objects>
             <point key="canvasLocation" x="2765" y="159"/>
         </scene>
-        <!--Calculate Quote View Controller-->
+        <!--Calculate Quotes View Controller-->
         <scene sceneID="pq4-MR-HwT">
             <objects>
-                <viewController storyboardIdentifier="CalculateQuoteViewController" id="Mos-kh-7mb" customClass="CalculateQuoteViewController" customModule="Tesla_POC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CalculateQuotesViewController" id="Mos-kh-7mb" customClass="CalculateQuotesViewController" customModule="Tesla_POC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lr0-TQ-Sza">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -407,7 +407,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Calculate"/>
                                 <connections>
-                                    <action selector="btnCalculateQuote:" destination="Mos-kh-7mb" eventType="touchUpInside" id="b7A-2Y-6aH"/>
+                                    <action selector="btnCalculate:" destination="Mos-kh-7mb" eventType="touchUpInside" id="Pl4-OA-DLs"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opH-CC-nh3">

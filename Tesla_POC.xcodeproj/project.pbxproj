@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D029B64A288AC0A000D807F5 /* InsuranceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D029B649288AC0A000D807F5 /* InsuranceDetailViewController.swift */; };
-		D07DFCA5288BF6CF00BA174B /* CalculateQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07DFCA4288BF6CF00BA174B /* CalculateQuoteViewController.swift */; };
+		D0E79AE9288E5D03006E0FCD /* CalculateQuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E79AE8288E5D03006E0FCD /* CalculateQuotesViewController.swift */; };
 		EF387EDF28871B52009FBD2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF387EDE28871B52009FBD2B /* AppDelegate.swift */; };
 		EF387EE128871B52009FBD2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF387EE028871B52009FBD2B /* SceneDelegate.swift */; };
 		EF387EE328871B52009FBD2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF387EE228871B52009FBD2B /* ViewController.swift */; };
@@ -60,7 +60,7 @@
 
 /* Begin PBXFileReference section */
 		D029B649288AC0A000D807F5 /* InsuranceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InsuranceDetailViewController.swift; path = Tesla_POC/View/InsuranceDetailViewController.swift; sourceTree = SOURCE_ROOT; };
-		D07DFCA4288BF6CF00BA174B /* CalculateQuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CalculateQuoteViewController.swift; path = Tesla_POC/View/CalculateQuoteViewController.swift; sourceTree = SOURCE_ROOT; };
+		D0E79AE8288E5D03006E0FCD /* CalculateQuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CalculateQuotesViewController.swift; path = Tesla_POC/View/CalculateQuotesViewController.swift; sourceTree = SOURCE_ROOT; };
 		EF387EDB28871B52009FBD2B /* Tesla_POC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tesla_POC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF387EDE28871B52009FBD2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF387EE028871B52009FBD2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -213,7 +213,7 @@
 				EFB375032887BA990088F7F4 /* RegisterViewController.swift */,
 				EFDBFE86288A458A00A034BB /* ProductListViewController.swift */,
 				D029B649288AC0A000D807F5 /* InsuranceDetailViewController.swift */,
-				D07DFCA4288BF6CF00BA174B /* CalculateQuoteViewController.swift */,
+				D0E79AE8288E5D03006E0FCD /* CalculateQuotesViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -371,13 +371,13 @@
 				EFB375042887BA9A0088F7F4 /* RegisterViewController.swift in Sources */,
 				EFDBFE91288A6AC400A034BB /* LoginValidation.swift in Sources */,
 				EF387EE328871B52009FBD2B /* ViewController.swift in Sources */,
+				D0E79AE9288E5D03006E0FCD /* CalculateQuotesViewController.swift in Sources */,
 				EFDBFE97288A6B3F00A034BB /* LoginResources.swift in Sources */,
 				EF387EDF28871B52009FBD2B /* AppDelegate.swift in Sources */,
 				EF387EE128871B52009FBD2B /* SceneDelegate.swift in Sources */,
 				D029B64A288AC0A000D807F5 /* InsuranceDetailViewController.swift in Sources */,
 				EFDBFE89288A462300A034BB /* Constants.swift in Sources */,
 				EFDBFE95288A6B1400A034BB /* HttpUtility.swift in Sources */,
-				D07DFCA5288BF6CF00BA174B /* CalculateQuoteViewController.swift in Sources */,
 				EFDBFE9D288A6BB300A034BB /* LoginResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

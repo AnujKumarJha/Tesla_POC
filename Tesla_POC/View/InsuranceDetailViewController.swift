@@ -54,7 +54,7 @@ class InsuranceDetailViewController: UIViewController {
     }
 
     @IBAction func btnFindQuotation(_ sender: UIButton) {
-        let calculateQuoVC = self.storyboard?.instantiateViewController(withIdentifier: "CalculateQuoteViewController") as! CalculateQuoteViewController
+        let calculateQuoVC = self.storyboard?.instantiateViewController(withIdentifier: "CalculateQuotesViewController") as! CalculateQuotesViewController
         self.navigationController?.pushViewController(calculateQuoVC, animated: true)
     }
     /*
