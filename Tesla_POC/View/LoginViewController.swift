@@ -28,6 +28,7 @@ class LoginViewController: UIViewController {
         Utilities.styleFilledButton(loginButton)
     }
     @IBAction func loginButtonAction(_ sender: Any) {
+        
         let email = emailTextField.text!.trimmingCharacters(in:.whitespacesAndNewlines)
         let password = passwordTextField.text!.trimmingCharacters(in:.whitespacesAndNewlines)
         Auth.auth().signIn(withEmail:email, password:password) { result,error in
@@ -36,11 +37,13 @@ class LoginViewController: UIViewController {
                 self.errorLabel.alpha = 1
             }
             else {
-                let productListVC =  self.storyboard?.instantiateViewController(withIdentifier:Constants.Storyboard.productListViewController) as? ProductListViewController
-                self.view.window?.rootViewController = productListVC
-                self.view.window?.makeKeyAndVisible()
+                let productListVC =  self.storyboard?.instantiateViewController(withIdentifier:Constants.Storyboard.productListViewController) as! ProductListViewController
+               // self.view.window?.rootViewController = productListVC
+               // self.view.window?.makeKeyAndVisible()
+                self.navigationController?.pushViewController(productListVC, animated: true)
             }
         }
+        
     }
     
     

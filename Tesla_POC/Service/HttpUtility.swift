@@ -7,8 +7,21 @@
 
 import Foundation
 
+
+typealias serviceResponseArray = (NSArray?,NSError?) -> Void
 struct HttpUtility
 {
+    func getData(urlString:URL,onCompletion: serviceResponseArray)
+    {
+       
+        URLSession.shared.dataTask(with: urlString) { (data, response, error) in
+            if error != nil{
+                print("Error: \(String(describing: error))")
+            }else{
+                print("Response:\(String(describing: response))")
+            }
+        }.resume()
+    }
     func getApiData<T:Decodable>(requestUrl: URL, resultType: T.Type, completionHandler:@escaping(_ result: T?)-> Void)
     {
         URLSession.shared.dataTask(with: requestUrl) { (responseData, httpUrlResponse, error) in
@@ -49,4 +62,6 @@ struct HttpUtility
             }
         }.resume()
     }
+    
+
 }
