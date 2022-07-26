@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct LoginResponse : Decodable {
+struct LoginResponse {
 
     let errorMessage: String?
     let data: LoginResponseData?

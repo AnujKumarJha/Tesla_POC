@@ -15,6 +15,7 @@
 		EF387EE628871B52009FBD2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF387EE428871B52009FBD2B /* Main.storyboard */; };
 		EF387EE828871B52009FBD2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF387EE728871B52009FBD2B /* Assets.xcassets */; };
 		EF387EEB28871B52009FBD2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF387EE928871B52009FBD2B /* LaunchScreen.storyboard */; };
+		EF47C5F7288EEE1C00F4294D /* LoginVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF47C5F6288EEE1C00F4294D /* LoginVCExtension.swift */; };
 		EFB375012887BA700088F7F4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB375002887BA700088F7F4 /* LoginViewController.swift */; };
 		EFB375042887BA9A0088F7F4 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB375032887BA990088F7F4 /* RegisterViewController.swift */; };
 		EFCD0C242888EE690029DFBC /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCD0C232888EE690029DFBC /* Utilities.swift */; };
@@ -69,6 +70,7 @@
 		EF387EE728871B52009FBD2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF387EEA28871B52009FBD2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF387EEC28871B52009FBD2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF47C5F6288EEE1C00F4294D /* LoginVCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVCExtension.swift; sourceTree = "<group>"; };
 		EFB375002887BA700088F7F4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EFB375032887BA990088F7F4 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		EFCD0C232888EE690029DFBC /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
@@ -207,13 +209,12 @@
 		EF394DF52887AF6F00CF3D3C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				EFDBFE8F288A69C600A034BB /* TableCell */,
-				EFDBFE8D288A698700A034BB /* Extension */,
 				EFB375002887BA700088F7F4 /* LoginViewController.swift */,
 				EFB375032887BA990088F7F4 /* RegisterViewController.swift */,
 				EFDBFE86288A458A00A034BB /* ProductListViewController.swift */,
 				D029B649288AC0A000D807F5 /* InsuranceDetailViewController.swift */,
 				D0E79AE8288E5D03006E0FCD /* CalculateQuotesViewController.swift */,
+				EF47C5F6288EEE1C00F4294D /* LoginVCExtension.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -241,20 +242,6 @@
 				EFDBFE9C288A6BB300A034BB /* LoginResponse.swift */,
 			);
 			path = LoginModule;
-			sourceTree = "<group>";
-		};
-		EFDBFE8D288A698700A034BB /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		EFDBFE8F288A69C600A034BB /* TableCell */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TableCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,6 +352,7 @@
 				EFCD0C242888EE690029DFBC /* Utilities.swift in Sources */,
 				EFB375012887BA700088F7F4 /* LoginViewController.swift in Sources */,
 				EFDBFE87288A458A00A034BB /* ProductListViewController.swift in Sources */,
+				EF47C5F7288EEE1C00F4294D /* LoginVCExtension.swift in Sources */,
 				EFDBFE9F288A6E6E00A034BB /* LoginViewModel.swift in Sources */,
 				EFDBFE93288A6AE700A034BB /* ValidationResult.swift in Sources */,
 				EFDBFE9B288A6B9B00A034BB /* LoginRequest.swift in Sources */,
