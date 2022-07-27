@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var registerButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Dashboard"
         setUpElements()
         // Do any additional setup after loading the view.
     }

@@ -19,9 +19,10 @@ class ProductListViewController: UIViewController,UICollectionViewDelegate,UICol
     let arrProduct = ["Home","Life","Medical","Motar"]
     let arrProductImage = ["home","life","medical","motar"]
     
+   
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "Product"
         // Do any additional setup after loading the view.
     }
     //Mark: - CollectionView DataSource and Delegate Methods

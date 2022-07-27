@@ -20,6 +20,7 @@ class RegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Register"
         setUpElements()
         // Do any additional setup after loading the view.
     }

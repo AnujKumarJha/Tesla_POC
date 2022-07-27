@@ -9,16 +9,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
+        <!--Login-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Tesla_POC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Login" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Tesla_POC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2qy-P4-Yop">
-                                <rect key="frame" x="40" y="84" width="334" height="215.5"/>
+                                <rect key="frame" x="40" y="128" width="334" height="215.5"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yME-di-KoV">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="42.5"/>
@@ -62,7 +62,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2qy-P4-Yop" secondAttribute="trailing" constant="40" id="jDH-Ly-Ykd"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="40c-Eg-5Qn"/>
+                    <navigationItem key="navigationItem" title="Login" id="40c-Eg-5Qn"/>
                     <connections>
                         <outlet property="emailTextField" destination="yME-di-KoV" id="l95-l0-laE"/>
                         <outlet property="errorLabel" destination="gas-sx-V5i" id="aA9-eV-f2l"/>
@@ -74,7 +74,7 @@
             </objects>
             <point key="canvasLocation" x="2404" y="-662"/>
         </scene>
-        <!--View Controller-->
+        <!--Dashboard-->
         <scene sceneID="tg8-Qf-rEz">
             <objects>
                 <viewController id="56J-eT-CCN" customClass="ViewController" customModule="Tesla_POC" customModuleProvider="target" sceneMemberID="viewController">
@@ -83,7 +83,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="SAl-Vt-88o">
-                                <rect key="frame" x="0.0" y="45" width="414" height="815.5"/>
+                                <rect key="frame" x="0.0" y="89" width="414" height="771.5"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="GrN-vn-XBn">
                                 <rect key="frame" x="40" y="702" width="334" height="120"/>
@@ -125,7 +125,7 @@
                             <constraint firstItem="eL3-3y-K7F" firstAttribute="bottom" secondItem="SAl-Vt-88o" secondAttribute="bottom" id="boQ-V5-YSh"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="sBz-i4-QCb"/>
+                    <navigationItem key="navigationItem" title="Dashboard" id="sBz-i4-QCb"/>
                     <connections>
                         <outlet property="loginButton" destination="tzW-FI-k7e" id="SFa-0n-agE"/>
                         <outlet property="registerButton" destination="VyR-jL-2fz" id="bCL-sd-YNx"/>
@@ -135,16 +135,16 @@
             </objects>
             <point key="canvasLocation" x="262" y="-147"/>
         </scene>
-        <!--Register View Controller-->
+        <!--Register-->
         <scene sceneID="XMx-fs-zpY">
             <objects>
-                <viewController id="AxI-b5-hS9" customClass="RegisterViewController" customModule="Tesla_POC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Register" id="AxI-b5-hS9" customClass="RegisterViewController" customModule="Tesla_POC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QX4-0u-RrD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3Wl-SS-jyp">
-                                <rect key="frame" x="20" y="64" width="374" height="369"/>
+                                <rect key="frame" x="20" y="108" width="374" height="369"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ibF-0d-wuh">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
@@ -214,10 +214,10 @@
             </objects>
             <point key="canvasLocation" x="1351" y="159"/>
         </scene>
-        <!--Product List View Controller-->
+        <!--Product-->
         <scene sceneID="qdh-i0-ARU">
             <objects>
-                <viewController storyboardIdentifier="ProductListVC" id="mjx-zj-abC" customClass="ProductListViewController" customModule="Tesla_POC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProductListVC" title="Product" id="mjx-zj-abC" customClass="ProductListViewController" customModule="Tesla_POC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J3H-sW-SL6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -304,25 +304,19 @@
             </objects>
             <point key="canvasLocation" x="2057" y="159"/>
         </scene>
-        <!--Insurance Detail View Controller-->
+        <!--Details-->
         <scene sceneID="o1u-3I-6ml">
             <objects>
-                <viewController storyboardIdentifier="InsuranceDetailViewController" id="I59-mR-yl6" customClass="InsuranceDetailViewController" customModule="Tesla_POC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InsuranceDetailViewController" title="Details" id="I59-mR-yl6" customClass="InsuranceDetailViewController" customModule="Tesla_POC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2h1-Vo-TTb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VfC-GD-YhG">
-                                <rect key="frame" x="20" y="64" width="42" height="25"/>
+                                <rect key="frame" x="20" y="64" width="386" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="XGw-Hg-dtd"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OBW-7Y-PdB">
-                                <rect key="frame" x="10" y="109" width="394" height="685"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -333,41 +327,90 @@
                                     <constraint firstAttribute="height" constant="40" id="uLX-Ns-RDG"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Get Quotation"/>
                                 <connections>
                                     <action selector="btnFindQuotation:" destination="I59-mR-yl6" eventType="touchUpInside" id="QjB-TS-LZV"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Y0t-f4-uS2">
+                                <rect key="frame" x="8" y="97" width="398" height="697"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="122" id="Bm7-ac-NMJ" customClass="InsuranceDetailTableViewCell" customModule="Tesla_POC" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="398" height="122"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bm7-ac-NMJ" id="IBh-4e-WX2">
+                                            <rect key="frame" x="0.0" y="0.0" width="398" height="122"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XNz-aQ-B4G">
+                                                    <rect key="frame" x="8" y="8" width="382" height="106"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5K-X5-2C5">
+                                                            <rect key="frame" x="8" y="8" width="366" height="90"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="B5K-X5-2C5" firstAttribute="leading" secondItem="XNz-aQ-B4G" secondAttribute="leading" constant="8" id="LpK-qW-GU5"/>
+                                                        <constraint firstItem="B5K-X5-2C5" firstAttribute="top" secondItem="XNz-aQ-B4G" secondAttribute="top" constant="8" id="ihV-Ly-yv0"/>
+                                                        <constraint firstAttribute="trailing" secondItem="B5K-X5-2C5" secondAttribute="trailing" constant="8" id="uhy-C7-Cmm"/>
+                                                        <constraint firstAttribute="bottom" secondItem="B5K-X5-2C5" secondAttribute="bottom" constant="8" id="xeR-DX-KTd"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="XNz-aQ-B4G" secondAttribute="bottom" constant="8" id="BnO-bk-zWX"/>
+                                                <constraint firstItem="XNz-aQ-B4G" firstAttribute="top" secondItem="IBh-4e-WX2" secondAttribute="top" constant="8" id="JaI-Aa-GXB"/>
+                                                <constraint firstAttribute="trailing" secondItem="XNz-aQ-B4G" secondAttribute="trailing" constant="8" id="okZ-QL-Eow"/>
+                                                <constraint firstItem="XNz-aQ-B4G" firstAttribute="leading" secondItem="IBh-4e-WX2" secondAttribute="leading" constant="8" id="xA3-mx-sfx"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblDetails" destination="B5K-X5-2C5" id="U8h-k7-Owt"/>
+                                            <outlet property="vwBase" destination="XNz-aQ-B4G" id="dok-Oo-feV"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="I59-mR-yl6" id="Xoh-oz-ocP"/>
+                                    <outlet property="delegate" destination="I59-mR-yl6" id="VYG-EW-Jy2"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4jn-rA-6Fp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="4VR-Kg-wJE" firstAttribute="top" secondItem="OBW-7Y-PdB" secondAttribute="bottom" constant="8" id="3oM-N9-O7E"/>
                             <constraint firstItem="4VR-Kg-wJE" firstAttribute="leading" secondItem="4jn-rA-6Fp" secondAttribute="leading" constant="20" id="9cQ-uv-hja"/>
                             <constraint firstItem="4jn-rA-6Fp" firstAttribute="bottom" secondItem="4VR-Kg-wJE" secondAttribute="bottom" constant="20" id="9ca-xH-3YE"/>
                             <constraint firstItem="VfC-GD-YhG" firstAttribute="leading" secondItem="4jn-rA-6Fp" secondAttribute="leading" constant="20" id="K0p-qe-ehd"/>
                             <constraint firstItem="VfC-GD-YhG" firstAttribute="top" secondItem="4jn-rA-6Fp" secondAttribute="top" constant="20" id="LMj-Jn-MKj"/>
-                            <constraint firstItem="OBW-7Y-PdB" firstAttribute="leading" secondItem="4jn-rA-6Fp" secondAttribute="leading" constant="10" id="O8K-HH-ZNF"/>
                             <constraint firstItem="4jn-rA-6Fp" firstAttribute="trailing" secondItem="4VR-Kg-wJE" secondAttribute="trailing" constant="20" id="OjW-9T-TGA"/>
-                            <constraint firstItem="OBW-7Y-PdB" firstAttribute="top" secondItem="VfC-GD-YhG" secondAttribute="bottom" constant="20" id="SRv-Rv-Xo1"/>
-                            <constraint firstItem="4jn-rA-6Fp" firstAttribute="trailing" secondItem="OBW-7Y-PdB" secondAttribute="trailing" constant="10" id="ebT-lr-leX"/>
+                            <constraint firstItem="4jn-rA-6Fp" firstAttribute="trailing" secondItem="Y0t-f4-uS2" secondAttribute="trailing" constant="8" id="ZET-Lu-4bj"/>
+                            <constraint firstItem="4VR-Kg-wJE" firstAttribute="top" secondItem="Y0t-f4-uS2" secondAttribute="bottom" constant="8" id="eem-3r-Reo"/>
+                            <constraint firstItem="4jn-rA-6Fp" firstAttribute="trailing" secondItem="VfC-GD-YhG" secondAttribute="trailing" constant="8" id="eu8-Wh-1dy"/>
+                            <constraint firstItem="Y0t-f4-uS2" firstAttribute="leading" secondItem="4jn-rA-6Fp" secondAttribute="leading" constant="8" id="rQm-C8-Bml"/>
+                            <constraint firstItem="Y0t-f4-uS2" firstAttribute="top" secondItem="VfC-GD-YhG" secondAttribute="bottom" constant="8" id="sq4-KF-Of4"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fSk-ti-Hkc"/>
                     <connections>
                         <outlet property="btnFindQuotes" destination="4VR-Kg-wJE" id="kz5-Dt-Mv7"/>
-                        <outlet property="lblDetails" destination="OBW-7Y-PdB" id="7kb-x0-LrN"/>
                         <outlet property="lblTitle" destination="VfC-GD-YhG" id="51N-uD-UK5"/>
+                        <outlet property="tblInsuranceDetail" destination="Y0t-f4-uS2" id="kZr-kK-gKK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mgr-k3-bbx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2765" y="159"/>
+            <point key="canvasLocation" x="2762.3188405797105" y="158.70535714285714"/>
         </scene>
-        <!--Calculate Quotes View Controller-->
+        <!--Quotation-->
         <scene sceneID="pq4-MR-HwT">
             <objects>
-                <viewController storyboardIdentifier="CalculateQuotesViewController" id="Mos-kh-7mb" customClass="CalculateQuotesViewController" customModule="Tesla_POC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CalculateQuotesViewController" title="Quotation" id="Mos-kh-7mb" customClass="CalculateQuotesViewController" customModule="Tesla_POC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lr0-TQ-Sza">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -410,7 +453,7 @@
                                     <action selector="btnCalculate:" destination="Mos-kh-7mb" eventType="touchUpInside" id="Pl4-OA-DLs"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opH-CC-nh3">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opH-CC-nh3">
                                 <rect key="frame" x="8" y="333" width="398" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -452,17 +495,22 @@
             </objects>
             <point key="canvasLocation" x="3536" y="159"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Dashboard-->
         <scene sceneID="c5O-Gq-qZa">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="aUc-Vh-2MP" sceneMemberID="viewController">
+                <navigationController title="Dashboard" automaticallyAdjustsScrollViewInsets="NO" id="aUc-Vh-2MP" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="WxA-Ll-3qm">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.18823529411764706" green="0.67843137254901964" blue="0.38823529411764707" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ePU-ay-jhs">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
-                        <segue destination="56J-eT-CCN" kind="relationship" relationship="rootViewController" id="rzR-kS-UxS"/>
+                        <segue destination="56J-eT-CCN" kind="relationship" relationship="rootViewController" id="Ves-jg-E7p"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T41-nO-GWU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
