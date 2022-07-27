@@ -22,31 +22,34 @@ class LoginViewController: UIViewController {
     }
     func setUpElements() {
         // Hide the error label
-        errorLabel.alpha = 0
+        errorLabel.alpha = 1
         // Style the elements
         Utilities.styleTextField(emailTextField)
         Utilities.styleTextField(passwordTextField)
         Utilities.styleFilledButton(loginButton)
     }
     @IBAction func loginButtonAction(_ sender: Any) {
-        
         let email = emailTextField.text!.trimmingCharacters(in:.whitespacesAndNewlines)
         let password = passwordTextField.text!.trimmingCharacters(in:.whitespacesAndNewlines)
-        Auth.auth().signIn(withEmail:email, password:password) { result,error in
-            if error != nil {
-                self.errorLabel.text =  error!.localizedDescription
-                self.errorLabel.alpha = 1
-            }
-            else {
+        let loginViewModel = loginViewodel()
+        loginViewModel.authenticateUser(email: email, password: password) { status, error in
+            guard let err = error , status == false else{
                 let productListVC =  self.storyboard?.instantiateViewController(withIdentifier:Constants.Storyboard.productListViewController) as! ProductListViewController
-               // self.view.window?.rootViewController = productListVC
-               // self.view.window?.makeKeyAndVisible()
-                self.navigationController?.pushViewController(productListVC, animated: true)
+                self.view.window?.rootViewController = productListVC
+                self.view.window?.makeKeyAndVisible()
+                return
             }
+            self.errorLabel.text =  err
+            self.errorLabel.alpha = 1
+        }
+            
         }
         
+        
+       
+      
     }
     
     
 
-}
+
