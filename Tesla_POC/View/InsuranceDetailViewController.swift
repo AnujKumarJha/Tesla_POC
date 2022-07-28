@@ -32,7 +32,9 @@ class InsuranceDetailViewController: UIViewController,UITableViewDelegate,UITabl
         lblTitle.text = "\(navigateFrom) Insurance"
         Utilities.styleFilledButton(btnFindQuotes)
         
-        getInsuranceDetail()
+        getInsuranceDetail { status in
+            print(status)
+        }
         // Do any additional setup after loading the view.
     }
     //MARK:- UITableView Delegate and DataSource Methods
@@ -59,21 +61,24 @@ class InsuranceDetailViewController: UIViewController,UITableViewDelegate,UITabl
         return cell
     }
       //MARK:- API
-    
-    func getInsuranceDetail()
-    {
+    func getInsuranceDetail(onSuccess: @escaping(Bool) -> Void){
+//    func getInsuranceDetail()
+//    {
     let urlString = "https://demo1273074.mockable.io/insurance"
         let url = URL(string: urlString)!
         let apiController = HttpUtility()
         apiController.getApiData(requestUrl: url, resultType: [InsuranceData].self) { result in
             if result != nil
             {
+                onSuccess(true)
                 print(result as Any)
                 self.arrDetails = result!
                 DispatchQueue.main.async {
                     self.tblInsuranceDetail.reloadData()
                 }
                
+            }else{
+                onSuccess(false)
             }
         }
     }

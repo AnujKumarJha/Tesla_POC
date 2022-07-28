@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		896E403C289163AB00263CD5 /* TestLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896E403B289163AB00263CD5 /* TestLogin.swift */; };
+		896E404528916A2000263CD5 /* ApiTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896E404428916A2000263CD5 /* ApiTest.swift */; };
 		D029B64A288AC0A000D807F5 /* InsuranceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D029B649288AC0A000D807F5 /* InsuranceDetailViewController.swift */; };
 		D0E79AE9288E5D03006E0FCD /* CalculateQuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E79AE8288E5D03006E0FCD /* CalculateQuotesViewController.swift */; };
 		EF387EDF28871B52009FBD2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF387EDE28871B52009FBD2B /* AppDelegate.swift */; };
@@ -59,7 +61,20 @@
 		EFDBFE9F288A6E6E00A034BB /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDBFE9E288A6E6E00A034BB /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		896E403D289163AB00263CD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF387ED328871B52009FBD2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF387EDA28871B52009FBD2B;
+			remoteInfo = Tesla_POC;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		896E4039289163AB00263CD5 /* TestLogin.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestLogin.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		896E403B289163AB00263CD5 /* TestLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLogin.swift; sourceTree = "<group>"; };
+		896E404428916A2000263CD5 /* ApiTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTest.swift; sourceTree = "<group>"; };
 		D029B649288AC0A000D807F5 /* InsuranceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InsuranceDetailViewController.swift; path = Tesla_POC/View/InsuranceDetailViewController.swift; sourceTree = SOURCE_ROOT; };
 		D0E79AE8288E5D03006E0FCD /* CalculateQuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CalculateQuotesViewController.swift; path = Tesla_POC/View/CalculateQuotesViewController.swift; sourceTree = SOURCE_ROOT; };
 		EF387EDB28871B52009FBD2B /* Tesla_POC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tesla_POC.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +103,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		896E4036289163AB00263CD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EF387ED828871B52009FBD2B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -125,10 +147,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		896E403A289163AB00263CD5 /* TestLogin */ = {
+			isa = PBXGroup;
+			children = (
+				896E403B289163AB00263CD5 /* TestLogin.swift */,
+				896E404428916A2000263CD5 /* ApiTest.swift */,
+			);
+			path = TestLogin;
+			sourceTree = "<group>";
+		};
 		EF387ED228871B52009FBD2B = {
 			isa = PBXGroup;
 			children = (
 				EF387EDD28871B52009FBD2B /* Tesla_POC */,
+				896E403A289163AB00263CD5 /* TestLogin */,
 				EF387EDC28871B52009FBD2B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -137,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				EF387EDB28871B52009FBD2B /* Tesla_POC.app */,
+				896E4039289163AB00263CD5 /* TestLogin.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -247,6 +280,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		896E4038289163AB00263CD5 /* TestLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 896E4041289163AB00263CD5 /* Build configuration list for PBXNativeTarget "TestLogin" */;
+			buildPhases = (
+				896E4035289163AB00263CD5 /* Sources */,
+				896E4036289163AB00263CD5 /* Frameworks */,
+				896E4037289163AB00263CD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				896E403E289163AB00263CD5 /* PBXTargetDependency */,
+			);
+			name = TestLogin;
+			productName = TestLogin;
+			productReference = 896E4039289163AB00263CD5 /* TestLogin.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		EF387EDA28871B52009FBD2B /* Tesla_POC */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF387EEF28871B52009FBD2B /* Build configuration list for PBXNativeTarget "Tesla_POC" */;
@@ -300,9 +351,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1340;
+				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					896E4038289163AB00263CD5 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = EF387EDA28871B52009FBD2B;
+					};
 					EF387EDA28871B52009FBD2B = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
@@ -325,11 +380,19 @@
 			projectRoot = "";
 			targets = (
 				EF387EDA28871B52009FBD2B /* Tesla_POC */,
+				896E4038289163AB00263CD5 /* TestLogin */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		896E4037289163AB00263CD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EF387ED928871B52009FBD2B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -344,6 +407,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		896E4035289163AB00263CD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				896E404528916A2000263CD5 /* ApiTest.swift in Sources */,
+				896E403C289163AB00263CD5 /* TestLogin.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EF387ED728871B52009FBD2B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -372,6 +444,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		896E403E289163AB00263CD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF387EDA28871B52009FBD2B /* Tesla_POC */;
+			targetProxy = 896E403D289163AB00263CD5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		EF387EE428871B52009FBD2B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -392,6 +472,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		896E403F289163AB00263CD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TV3SUF589F;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vandana.TestLogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tesla_POC.app/Tesla_POC";
+			};
+			name = Debug;
+		};
+		896E4040289163AB00263CD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TV3SUF589F;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vandana.TestLogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tesla_POC.app/Tesla_POC";
+			};
+			name = Release;
+		};
 		EF387EED28871B52009FBD2B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -442,7 +560,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -496,7 +614,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -567,6 +685,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		896E4041289163AB00263CD5 /* Build configuration list for PBXNativeTarget "TestLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				896E403F289163AB00263CD5 /* Debug */,
+				896E4040289163AB00263CD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EF387ED628871B52009FBD2B /* Build configuration list for PBXProject "Tesla_POC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
