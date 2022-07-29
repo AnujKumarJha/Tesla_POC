@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+struct ProductList:Decodable
+{
+    let id:Int
+    let name:String
+    let description:String
+    let company:String
+    let imageUrl:String
+}
+

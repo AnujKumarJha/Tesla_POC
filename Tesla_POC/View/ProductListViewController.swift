@@ -16,13 +16,20 @@ class ProductListViewController: UIViewController,UICollectionViewDelegate,UICol
     
     @IBOutlet weak var collVwProduct:UICollectionView!
     
-    let arrProduct = ["Home","Life","Medical","Motar"]
-    let arrProductImage = ["home","life","medical","motar"]
+    var arrProduct = [ProductList]()
+    let arrProductImage = ["home_insurance","car_insurance","health_insurance","family_insurance","fire_insurance","travel_insurance"]
     
    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Product"
+        getProductList { data in
+            self.arrProduct = data
+            DispatchQueue.main.async {
+                self.collVwProduct.reloadData()
+            }
+           
+        }
         // Do any additional setup after loading the view.
     }
     //Mark: - CollectionView DataSource and Delegate Methods
@@ -33,8 +40,9 @@ class ProductListViewController: UIViewController,UICollectionViewDelegate,UICol
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collVwProduct.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ProductListCollectionViewCell
         
-        cell.baseVw.backgroundColor =  #colorLiteral(red: 0.2143889368, green: 0.7209745049, blue: 0.4636286497, alpha: 1)
-        cell.lblProductName.text = arrProduct[indexPath.row]
+       // cell.baseVw.backgroundColor =  #colorLiteral(red: 0.2143889368, green: 0.7209745049, blue: 0.4636286497, alpha: 1)
+        let dict = arrProduct[indexPath.row]
+        cell.lblProductName.text = dict.name
         cell.imgVWProduct.image = UIImage(named: arrProductImage[indexPath.row])
         return cell
     }
@@ -50,14 +58,28 @@ class ProductListViewController: UIViewController,UICollectionViewDelegate,UICol
          
         
     }
-    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
-        return .none
-       }
+   
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collVwProduct.bounds.size.width, height: collVwProduct.bounds.size.height/4)
+        return CGSize(width: collVwProduct.frame.size.width/2, height: collVwProduct.frame.size.height/3)
     }
 
-
+//    func getProductList()
+//    {
+//    let urlString = "https://demo2197219.mockable.io/"
+//        let url = URL(string: urlString)!
+//        let apiController = HttpUtility()
+//        apiController.getApiData(requestUrl: url, resultType: [ProductList].self) { result in
+//            if result != nil
+//            {
+//                print(result as Any)
+//                                self.arrProduct = result!
+//                DispatchQueue.main.async {
+//                    self.collVwProduct.reloadData()
+//                }
+//               
+//            }
+//        }
+//    }
     /*
     // MARK: - Navigation
 
