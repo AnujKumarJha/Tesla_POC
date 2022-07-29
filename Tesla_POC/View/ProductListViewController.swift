@@ -17,7 +17,7 @@ class ProductListViewController: UIViewController,UICollectionViewDelegate,UICol
     @IBOutlet weak var collVwProduct:UICollectionView!
     
     var arrProduct = [ProductList]()
-    let arrProductImage = ["home_insurance","car_insurance","health_insurance","family_insurance","fire_insurance","travel_insurance"]
+    let arrProductImage = Constants.arrProductImage
     
    
     override func viewDidLoad() {
@@ -61,6 +61,11 @@ class ProductListViewController: UIViewController,UICollectionViewDelegate,UICol
    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collVwProduct.frame.size.width/2, height: collVwProduct.frame.size.height/3)
+        
+        if UIDevice.current.userInterfaceIdiom == .pad
+        {
+            return CGSize(width: collVwProduct.frame.size.width/3, height: collVwProduct.frame.size.height/2)
+        }
     }
 
 //    func getProductList()

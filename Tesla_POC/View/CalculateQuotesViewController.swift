@@ -23,7 +23,11 @@ class CalculateQuotesViewController: UIViewController {
         super.viewDidLoad()
         self.title = "Quotation"
         lblDisplayQuote.isHidden = true
-        
+        Utilities.styleTextField(txtfName)
+        Utilities.styleTextField(txtfPhone)
+        Utilities.styleTextField(txtfEmail)
+        Utilities.styleTextField(txtfAmount)
+        Utilities.styleTextField(txtfInstalment)
         Utilities.styleFilledButton(btnCalculation)
        
         // Do any additional setup after loading the view.

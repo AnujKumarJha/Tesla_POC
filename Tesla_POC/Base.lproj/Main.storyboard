@@ -442,8 +442,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Sam-dq-wce">
-                                <rect key="frame" x="10" y="64" width="394" height="210"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Sam-dq-wce">
+                                <rect key="frame" x="10" y="64" width="394" height="250"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uz5-4G-iUB">
                                         <rect key="frame" x="0.0" y="0.0" width="394" height="34"/>
@@ -451,29 +451,29 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XwK-vH-cAk">
-                                        <rect key="frame" x="0.0" y="44" width="394" height="34"/>
+                                        <rect key="frame" x="0.0" y="54" width="394" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tm1-Tb-rax">
-                                        <rect key="frame" x="0.0" y="88" width="394" height="34"/>
+                                        <rect key="frame" x="0.0" y="108" width="394" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Premium Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I9f-QI-Qc0">
-                                        <rect key="frame" x="0.0" y="132" width="394" height="34"/>
+                                        <rect key="frame" x="0.0" y="162" width="394" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number of Installments" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xGc-qv-HiZ">
-                                        <rect key="frame" x="0.0" y="176" width="394" height="34"/>
+                                        <rect key="frame" x="0.0" y="216" width="394" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0d-WB-1yA">
-                                <rect key="frame" x="20" y="294" width="374" height="31"/>
+                                <rect key="frame" x="20" y="344" width="374" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Calculate"/>
                                 <connections>
@@ -481,7 +481,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opH-CC-nh3">
-                                <rect key="frame" x="8" y="333" width="398" height="20.5"/>
+                                <rect key="frame" x="8" y="395" width="398" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -497,14 +497,14 @@
                         <viewLayoutGuide key="safeArea" id="IvA-zP-xmZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="R0d-WB-1yA" firstAttribute="top" secondItem="Sam-dq-wce" secondAttribute="bottom" constant="20" id="2Cn-vd-hel"/>
+                            <constraint firstItem="R0d-WB-1yA" firstAttribute="top" secondItem="Sam-dq-wce" secondAttribute="bottom" constant="30" id="2Cn-vd-hel"/>
                             <constraint firstItem="R0d-WB-1yA" firstAttribute="leading" secondItem="IvA-zP-xmZ" secondAttribute="leading" constant="20" id="CIB-f9-SkV"/>
                             <constraint firstItem="IvA-zP-xmZ" firstAttribute="trailing" secondItem="R0d-WB-1yA" secondAttribute="trailing" constant="20" id="F5o-vp-8sK"/>
                             <constraint firstItem="IvA-zP-xmZ" firstAttribute="trailing" secondItem="opH-CC-nh3" secondAttribute="trailing" constant="8" id="MHV-iA-J1V"/>
                             <constraint firstItem="IvA-zP-xmZ" firstAttribute="trailing" secondItem="Sam-dq-wce" secondAttribute="trailing" constant="10" id="N4Z-9t-AQE"/>
                             <constraint firstItem="Sam-dq-wce" firstAttribute="top" secondItem="IvA-zP-xmZ" secondAttribute="top" constant="20" id="Ocw-hu-HX8"/>
                             <constraint firstItem="Sam-dq-wce" firstAttribute="leading" secondItem="IvA-zP-xmZ" secondAttribute="leading" constant="10" id="QGR-h9-nWZ"/>
-                            <constraint firstItem="opH-CC-nh3" firstAttribute="top" secondItem="R0d-WB-1yA" secondAttribute="bottom" constant="8" id="b2T-bt-1tw"/>
+                            <constraint firstItem="opH-CC-nh3" firstAttribute="top" secondItem="R0d-WB-1yA" secondAttribute="bottom" constant="20" id="b2T-bt-1tw"/>
                             <constraint firstItem="opH-CC-nh3" firstAttribute="leading" secondItem="IvA-zP-xmZ" secondAttribute="leading" constant="8" id="nsQ-TU-RR4"/>
                         </constraints>
                     </view>
