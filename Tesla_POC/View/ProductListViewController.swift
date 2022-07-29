@@ -28,7 +28,7 @@ class ProductListViewController: UIViewController,UICollectionViewDelegate,UICol
             DispatchQueue.main.async {
                 self.collVwProduct.reloadData()
             }
-           
+           print(data)
         }
         // Do any additional setup after loading the view.
     }
