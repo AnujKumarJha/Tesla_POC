@@ -25,35 +25,19 @@ class InsuranceDetailViewController: UIViewController{
         self.title = "Details"
       
         Utilities.styleFilledButton(btnFindQuotes)
-        
-        getInsuranceDetail { status in
-            print(status)
+        lblName.text = navigateFrom?.name
+        lblCompany.text = navigateFrom?.company
+        lblDescription.text = navigateFrom?.description
+        let url = URL(string: navigateFrom!.imageUrl)
+        let data = try? Data(contentsOf: url!)
+
+        if let imageData = data {
+            imgVW.image = UIImage(data: imageData)
         }
         // Do any additional setup after loading the view.
     }
 
       //MARK:- API
-    func getInsuranceDetail(onSuccess: @escaping(Bool) -> Void){
-//    func getInsuranceDetail()
-//    {
-    let urlString = "https://demo1273074.mockable.io/insurance"
-        let url = URL(string: urlString)!
-        let apiController = HttpUtility()
-        apiController.getApiData(requestUrl: url, resultType: [InsuranceData].self) { result in
-            if result != nil
-            {
-                onSuccess(true)
-                print(result as Any)
-                self.arrDetails = result!
-                DispatchQueue.main.async {
-                    self.tblInsuranceDetail.reloadData()
-                }
-               
-            }else{
-                onSuccess(false)
-            }
-        }
-    }
     
 
     @IBAction func btnFindQuotation(_ sender: UIButton) {
