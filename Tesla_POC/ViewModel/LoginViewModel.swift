@@ -38,7 +38,8 @@ struct loginViewodel {
 }
 func getProductList(completionHander:@escaping([ProductList])->())
 {
-let urlString = "https://demo2197219.mockable.io/"
+//let urlString = "https://demo2197219.mockable.io/"
+    let urlString = ApiEndpoints.productList
     let url = URL(string: urlString)!
     let apiController = HttpUtility()
     apiController.getApiData(requestUrl: url, resultType: [ProductList].self) { result in

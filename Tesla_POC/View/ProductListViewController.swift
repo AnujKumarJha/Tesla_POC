@@ -17,7 +17,7 @@ class ProductListViewController: UIViewController,UICollectionViewDelegate,UICol
     @IBOutlet weak var collVwProduct:UICollectionView!
     
     var arrProduct = [ProductList]()
-    let arrProductImage = ["home_insurance","car_insurance","health_insurance","family_insurance","fire_insurance","travel_insurance"]
+    let arrProductImage = Constants.arrProductImage
     
    
     override func viewDidLoad() {
