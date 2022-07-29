@@ -17,7 +17,7 @@ class InsuranceDetailViewController: UIViewController{
     
     @IBOutlet weak var tblInsuranceDetail:UITableView!
   
-   
+    var navigateFrom : ProductList?
    
 
     override func viewDidLoad() {
