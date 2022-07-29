@@ -28,7 +28,7 @@ class InsuranceDetailViewController: UIViewController{
         lblName.text = navigateFrom?.name
         lblCompany.text = navigateFrom?.company
         lblDescription.text = navigateFrom?.description
-        let url = URL(string: navigateFrom!.imageUrl)
+        let url = URL(string: navigateFrom!.imageUrl ?? "")
         let data = try? Data(contentsOf: url!)
 
         if let imageData = data {

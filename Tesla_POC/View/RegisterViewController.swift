@@ -95,9 +95,10 @@ class RegisterViewController: UIViewController {
     }
     func transitionToHome()
     {
-       let productListVC =  storyboard?.instantiateViewController(withIdentifier:Constants.Storyboard.productListViewController) as? ProductListViewController
-        view.window?.rootViewController = productListVC
-        view.window?.makeKeyAndVisible()
+       let productListVC =  storyboard?.instantiateViewController(withIdentifier:Constants.Storyboard.productListViewController) as! ProductListViewController
+        navigationController?.pushViewController(productListVC, animated: true)
+       // view.window?.rootViewController = productListVC
+       // view.window?.makeKeyAndVisible()
     }
     /*
     // MARK: - Navigation

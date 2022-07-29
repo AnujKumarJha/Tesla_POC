@@ -35,8 +35,9 @@ class LoginViewController: UIViewController {
         loginViewModel.authenticateUser(email: email, password: password) { status, error in
             guard let err = error , status == false else{
                 let productListVC =  self.storyboard?.instantiateViewController(withIdentifier:Constants.Storyboard.productListViewController) as! ProductListViewController
-                self.view.window?.rootViewController = productListVC
-                self.view.window?.makeKeyAndVisible()
+              //  self.view.window?.rootViewController = productListVC
+              //  self.view.window?.makeKeyAndVisible()
+                self.navigationController?.pushViewController(productListVC, animated: true)
                 return
             }
             self.errorLabel.text =  err
