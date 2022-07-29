@@ -13,6 +13,6 @@ struct ProductList:Decodable
     let name:String
     let description:String
     let company:String
-    let imageUrl:String
+    let imageUrl:String?
 }
 
