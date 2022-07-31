@@ -49,5 +49,21 @@ class Utilities {
         let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?&])[A-Za-z\\d$@$#!%*?&]{8,}")
         return passwordTest.evaluate(with: password)
     }
+    static func ValidateEmailString (strEmail:Any) -> Bool
+    {
+        let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
+        let emailText = NSPredicate(format:"SELF MATCHES [c]%@",emailRegex)
+        return (emailText.evaluate(with: strEmail))
+    }
+    
+    struct Alert {
+        static func present(title: String?, message: String, from controller: UIViewController) {
+            let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+            // present the alert
+            alertController.addAction(UIAlertAction(title: Constants.OkAlertTitle, style: .default, handler: nil))
+            controller.present(alertController, animated: true, completion: nil)
+        }
+    }
     
 }
+

@@ -59,6 +59,7 @@
 		EFDBFE9B288A6B9B00A034BB /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDBFE9A288A6B9B00A034BB /* LoginRequest.swift */; };
 		EFDBFE9D288A6BB300A034BB /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDBFE9C288A6BB300A034BB /* LoginResponse.swift */; };
 		EFDBFE9F288A6E6E00A034BB /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDBFE9E288A6E6E00A034BB /* LoginViewModel.swift */; };
+		EFE4636C2896542300C79FF5 /* registerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE4636B2896542300C79FF5 /* registerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		EFDBFE9A288A6B9B00A034BB /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		EFDBFE9C288A6BB300A034BB /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		EFDBFE9E288A6E6E00A034BB /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		EFE4636B2896542300C79FF5 /* registerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,6 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				EFDBFE9E288A6E6E00A034BB /* LoginViewModel.swift */,
+				EFE4636B2896542300C79FF5 /* registerViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -423,6 +426,7 @@
 				EFDBFE99288A6B7800A034BB /* InsuranceResponseModel.swift in Sources */,
 				EFCD0C242888EE690029DFBC /* Utilities.swift in Sources */,
 				EFB375012887BA700088F7F4 /* LoginViewController.swift in Sources */,
+				EFE4636C2896542300C79FF5 /* registerViewModel.swift in Sources */,
 				EFDBFE87288A458A00A034BB /* ProductListViewController.swift in Sources */,
 				EF47C5F7288EEE1C00F4294D /* LoginVCExtension.swift in Sources */,
 				EFDBFE9F288A6E6E00A034BB /* LoginViewModel.swift in Sources */,
