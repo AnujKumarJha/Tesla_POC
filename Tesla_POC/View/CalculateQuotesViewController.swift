@@ -36,33 +36,27 @@ class CalculateQuotesViewController: UIViewController {
     {
        
         guard let name = txtfName.text , validation.isValidName(name: name) else  {
-            print("Please Enter your correct Name")
-            lblDisplayQuote.text = "Please Enter your Name"
+            alertControllerAction(alertTitle: "Name", alertMessage: Constants.alertNameError, vc: self)
             return
         }
         guard let phone = txtfPhone.text , validation.isValidPhone(phone: phone) else {
-            print("Please Enter Your correct Phone Number")
-            lblDisplayQuote.text = "Please Enter Your Phone Number"
+            alertControllerAction(alertTitle: "Phone Number", alertMessage: Constants.alertPhoneNumber, vc: self)
             return
         }
         guard let email = txtfEmail.text ,validation.isValidEmail(email: email) else {
-            print("Please Enter your Email ID")
-            lblDisplayQuote.text = "Please Enter your Email ID"
+            alertControllerAction(alertTitle: "Email ID", alertMessage: Constants.alertEmailError, vc: self)
             return
         }
         guard let premiumAmount = txtfAmount.text, !premiumAmount.isEmpty else {
-                      print("Enter AMount")
-                    lblDisplayQuote.text = "Please Enter Premium Amount"
+            alertControllerAction(alertTitle: "Premium Amount", alertMessage: Constants.alertPremiumAmountError, vc: self)
                       return
                   }
         guard let numberInstalment = txtfInstalment.text, !numberInstalment.isEmpty else {
-                     print("ENter number of Instalment")
-            lblDisplayQuote.text = "Please Enter No of Instalment"
+            alertControllerAction(alertTitle: "Instalment", alertMessage: Constants.alertInstalmentError, vc: self)
                       return
                   }
                   guard let amount = Double(premiumAmount), amount >= 0 else {
-                     print("Amount should be greter than 0")
-                      lblDisplayQuote.text = "Premium AMount Should be greater than 0"
+                      alertControllerAction(alertTitle: "Premium Amount", alertMessage: "Premium Amount Should be greater than 0", vc: self)
                       return
                   }
                   guard let instlment = Double(numberInstalment), instlment > 0 else {
@@ -71,6 +65,7 @@ class CalculateQuotesViewController: UIViewController {
                   }
                   let calculation = amount/instlment
                   lblDisplayQuote.text = "The instalment per month will be \(calculation)"
+        alertControllerAction(alertTitle: "Quotation", alertMessage: "The instalment per month will be \(calculation)", vc: self)
     }
     @IBAction func btnCalculate(_ sender: Any) {
         lblDisplayQuote.isHidden = false

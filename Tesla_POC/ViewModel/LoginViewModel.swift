@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 
 func getProductList(completionHander:@escaping([ProductList])->())
@@ -49,4 +50,23 @@ func isValidEmail(email:String) -> Bool
        return valid
 
    }
+    
+
 }
+func alertControllerAction(alertTitle:String,alertMessage:String,vc:UIViewController)
+  {
+      let alertController = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .alert)
+      let okAction = UIAlertAction(title: Constants.OkAlertTitle, style: .default) { okaction in
+          print("OK Pressed")
+      }
+      let cancelAction = UIAlertAction(title: Constants.CancelAlertTitle, style: .default) { cancelAction in
+          print("Cancel Pressed")
+      }
+      alertController.addAction(okAction)
+      alertController.addAction(cancelAction)
+      vc.present(alertController, animated: true, completion: nil)
+      
+  }
+
+
+
