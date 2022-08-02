@@ -28,7 +28,7 @@ struct loginViewodel {
             }
     }
 }
-func getProductList(completionHander:@escaping([ProductList])->())
+func getProductList(completionHander:@escaping(Bool,[ProductList])->())
 {
 //let urlString = "https://demo2197219.mockable.io/"
     let urlString = ApiEndpoints.productList
@@ -38,7 +38,7 @@ func getProductList(completionHander:@escaping([ProductList])->())
         if result != nil
         {
             print(result as Any)
-            completionHander(result!)
+            completionHander(true ,result!)
            
         }
     }
