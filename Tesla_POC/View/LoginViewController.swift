@@ -42,8 +42,7 @@ class LoginViewController: UIViewController {
                 guard let err = error , status == false
                 else{
                     let productListVC =  self.storyboard?.instantiateViewController(withIdentifier:Constants.Storyboard.productListViewController) as! ProductListViewController
-                    self.view.window?.rootViewController = productListVC
-                    self.view.window?.makeKeyAndVisible()
+                    self.navigationController?.pushViewController(productListVC, animated: true)
                     return
                 }
                 Utilities.Alert.present(title:Constants.ErrorAlertTitle,message:err,from:self)

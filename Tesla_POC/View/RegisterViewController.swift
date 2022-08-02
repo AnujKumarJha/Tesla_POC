@@ -78,8 +78,6 @@ class RegisterViewController: UIViewController {
     {
        let productListVC =  storyboard?.instantiateViewController(withIdentifier:Constants.Storyboard.productListViewController) as! ProductListViewController
         navigationController?.pushViewController(productListVC, animated: true)
-       // view.window?.rootViewController = productListVC
-       // view.window?.makeKeyAndVisible()
     }
     /*
     // MARK: - Navigation
