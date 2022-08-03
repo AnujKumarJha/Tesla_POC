@@ -25,14 +25,66 @@ class ApiTest: XCTestCase {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
+    func testAPiCheckForTrueStatus(){
+
+           var api =  getProductList { status, result in
+
+               XCTAssert(status)
+
+           }
+
+       }
+
+       
+
+       func testAPiCheckForNil(){
+
+           var api =  getProductList { status, result in
+
+               XCTAssertNil(true)
+
+           }
+
+       }
+
+       
+
+       func testAPiCheckForCount(){
+
+           var api =  getProductList { status, result in
+
+               XCTAssertNotEqual(result.count, 6)
+
+           }
+
+       }
+
+       
+
+       func testAPiCheckForNotEqual(){
+
+           var api =  getProductList { status, result in
+
+               XCTAssertNotEqual(result.isEmpty, true)
+
+           }
+
+       }
+
+       
+
+       func testDatGetFromApi(){
+
+           var api =  getProductList { status, Result in
+
+               XCTAssert(true, "get data from api")
+
+            //   XCTAssertIdentical(Result.first?.id, 1,"values are identicals")
+
+               XCTAssertNotEqual(Result.first?.id, 2)
+
+           }
+
+       }
     
-    func testAPiCheck(){
-        var api = InsuranceDetailViewController()
-      
-        api.getInsuranceDetail { status in
-            XCTAssert(true)
-        }
-        
-      //  XCTAssertTrue(true)
-    }
 }
