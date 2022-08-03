@@ -23,7 +23,7 @@ class ProductListViewController: UIViewController,UICollectionViewDelegate,UICol
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Product"
-        getProductList { data in
+        getProductList {  Bool,data in
             self.arrProduct = data
             DispatchQueue.main.async {
                 self.collVwProduct.reloadData()
